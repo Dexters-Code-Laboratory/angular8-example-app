@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 /* Angular Flex Layout */
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +30,17 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     AuthorDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
+    AngularMaterialModule,
+    ReactiveFormsModule,
+    FlexLayoutModule,
     HttpClientModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
 // and returns simulated server responses.
