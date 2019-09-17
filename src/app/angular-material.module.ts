@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatTreeModule} from '@angular/material/tree';
 
 import {
   MatButtonModule,
@@ -19,7 +20,8 @@ import {
   MatTooltipModule,
   MatTableModule,
   MatPaginatorModule,
-  MatCardModule
+  MatCardModule,
+  MatMenuModule
 } from '@angular/material';
 
 @NgModule({
@@ -42,7 +44,9 @@ import {
     MatTooltipModule,
     MatTableModule,
     MatPaginatorModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule,
+    MatTreeModule
   ],
   exports: [
     MatButtonModule,
@@ -61,7 +65,9 @@ import {
     MatTooltipModule,
     MatTableModule,
     MatPaginatorModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule,
+    MatTreeModule
   ],
   providers: [
     MatDatepickerModule,

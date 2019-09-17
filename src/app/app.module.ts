@@ -22,6 +22,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /* Angular Flex Layout */
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { RegisterComponent } from './register/register.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { HeaderComponent } from './header/header.component';
+
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,9 @@ import { RegisterComponent } from './register/register.component';
     MessagesComponent,
     DashboardComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    SidenavComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +47,7 @@ import { RegisterComponent } from './register/register.component';
     AngularMaterialModule,
     ReactiveFormsModule,
     FlexLayoutModule,
+    NgbModule,
     HttpClientModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
 // and returns simulated server responses.
